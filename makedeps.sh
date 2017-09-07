@@ -221,6 +221,10 @@ if ! available "ghc-cryptonite >= 0.24" ; then
     rebuild cryptonite -weldr
 fi
 
+# Built from a local copy of the .spec
+( cd "$BASEDIR" && buildpkg "libgit2" ) || exit 1
+( cd "$BASEDIR" && buildpkg "libgit2-glib" ) || exit 1
+
 # Download bdcs and build its deps
 ( cd build &&
   rm -rf bdcs &&
