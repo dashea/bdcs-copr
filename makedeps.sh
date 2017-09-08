@@ -134,7 +134,18 @@ fixspec() {
     # having to fix someone else's tests) just always disable tests.
     sed -i 's/%bcond_without tests/%bcond_with tests/' "${pkgname}.spec"
 
-    if [[ "$pkgname" = "ghc-haskell-gi" || "$pkgname" = "ghc-hspec-discover" ]]; then
+    if [[ "$pkgname" = "ghc-haskell-gi" ]]; then
+        # I'm not real clear on what this line intends to do, but it's wrong
+        sed -i '/mv %{buildroot}%{_ghcdocdir}\/{,ghc-}%{name}/d' "${pkgname}.spec"
+
+    # Change the source of haskell-gi to an upstream commit from github
+    sed -i -e '1i\
+%global commit0 dcf5c7837927632dd5aedb52ad4d70ac84f0c08a\
+%global shortcommit0 %(c=%{commit0}; echo ${c:0:7})' "${pkgname}.spec"
+        sed -i 's/^Source0.*/Source0:        https:\/\/github.com\/haskell-gi\/haskell-gi\/archive\/%{commit0}.tar.gz#\/%{name}-%{shortcommit0}.tar.gz/' "${pkgname}.spec"
+        sed -i 's/^%setup.*/%autosetup -n haskell-gi-%{commit0}/' "${pkgname}.spec"
+        sed -i 's/Release:.*/&.weldr.1/' ghc-haskell-gi.spec
+    elif [[ "$pkgname" = "ghc-hspec-discover" ]]; then
         # I'm not real clear on what this line intends to do, but it's wrong
         sed -i '/mv %{buildroot}%{_ghcdocdir}\/{,ghc-}%{name}/d' "${pkgname}.spec"
     elif [[ "$pkgname" =~ ^ghc-gi- ]]; then
