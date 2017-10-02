@@ -1,0 +1,19 @@
+commit 51610fab609fdfba009ad6b8769faf2647ee8a96
+Author: Felix Yan <felixonmars@archlinux.org>
+Date:   Tue Jun 27 23:16:10 2017 +0800
+
+    Allow http-media 0.7
+
+diff --git a/servant/servant.cabal b/servant/servant.cabal
+index 5efd1f1..58f440c 100644
+--- a/servant/servant.cabal
++++ b/servant/servant.cabal
+@@ -64,7 +64,7 @@ library
+     , bytestring            >= 0.10 && < 0.11
+     , case-insensitive      >= 1.2  && < 1.3
+     , http-api-data         >= 0.3  && < 0.4
+-    , http-media            >= 0.4  && < 0.7
++    , http-media            >= 0.4  && < 0.8
+     , http-types            >= 0.8  && < 0.10
+     , natural-transformation >= 0.4 && < 0.5
+     , mtl                   >= 2.0  && < 2.3

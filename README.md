@@ -63,6 +63,14 @@ build things in against F26:
 * ![ghc-authenticate-oauth status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-authenticate-oauth/status_image/last_build.png) [ghc-authenticate-oauth](ghc-authenticate-oauth)
 * ![ghc-psqueues-weldr status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-psqueues-weldr/status_image/last_build.png) [ghc-psqueues-weldr](ghc-psqueues-weldr)
 * ![ghc-wreq status](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-wreq/status_image/last_build.png) [ghc-wreq](ghc-wreq)
+* ![ghc-unbounded-delays](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-unbounded-delays/status_image/last_build.png) [ghc-unbounded-delays](ghc-unbounded-delays)
+* ![ghc-concurrent-extra](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-concurrent-extra/status_image/last_build.png) [ghc-concurrent-extra](ghc-concurrent-extra)
+* ![ghc-generics-sop](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-generics-sop/status_image/last_build.png) [ghc-generics-sop](ghc-generics-sop)
+* ![ghc-http-media](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-http-media/status_image/last_build.png) [ghc-http-media](ghc-http-media)
+* ![ghc-natural-transformation](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-natural-transformation/status_image/last_build.png) [ghc-natural-transformation](ghc-natural-transformation)
+* ![ghc-string-conversions](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-string-conversions/status_image/last_build.png) [ghc-string-conversions](ghc-string-converions)
+* ![ghc-servant](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant/status_image/last_build.png) [ghc-servant](ghc-servant)
+* ![ghc-servant-client](https://copr.fedorainfracloud.org/coprs/g/weldr/bdcs-haskell-deps/package/ghc-servant-client/status_image/last_build.png) [ghc-servant-client](ghc-servant-client)
 
 Fedora 27 already has a sufficiently new version of libgit2.
 

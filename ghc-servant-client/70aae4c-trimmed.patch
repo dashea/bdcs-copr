@@ -1,0 +1,19 @@
+commit 70aae4c5c0a3d20d6209d338931ea4a30da33214
+Author: Oleg Grenrus <oleg.grenrus@iki.fi>
+Date:   Tue Jun 27 21:59:01 2017 +0300
+
+    Relax bound for http-media in servant-client
+
+diff --git a/servant-client/servant-client.cabal b/servant-client/servant-client.cabal
+index f80e0ce..37fdfda 100644
+--- a/servant-client/servant-client.cabal
++++ b/servant-client/servant-client.cabal
+@@ -47,7 +47,7 @@ library
+     , http-api-data         >= 0.3.6    && < 0.4
+     , http-client           >= 0.4.18.1 && < 0.6
+     , http-client-tls       >= 0.2.2    && < 0.4
+-    , http-media            >= 0.6.2    && < 0.7
++    , http-media            >= 0.6.2    && < 0.8
+     , http-types            >= 0.8.6    && < 0.10
+     , monad-control         >= 1.0.0.4  && < 1.1
+     , network-uri           >= 2.6      && < 2.7
